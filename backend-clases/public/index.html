@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Servidor Node + Express</title>
+  </head>
+  <body>
+    <h1>Backend + Frontend en un Monolito</h1>
+    <p>Este HTML es servido directamente por Express.</p>
+
+    <script>
+      // Llamada simple a la API
+      fetch("/saludo")
+        .then((res) => res.json())
+        .then((data) => console.log(data));
+
+      // Llamada info
+      fetch("/api/info")
+        .then((res) => res.json())
+        .then((data) => console.log(data));
+    </script>
+  </body>
+</html>
